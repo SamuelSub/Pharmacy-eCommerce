@@ -28,25 +28,16 @@ nav {
   display: none;
 }
 
-.toggle::before {
-  content: '';
+.toggle-1 {
   position: absolute;
-  top: 0.3em;
+  right: 85%;
+  top: 2.2em;
   width: 1.7em;
   height: 0.2em;
   background: #1da81d;
 }
 
-.toggle::after {
-  content: '';
-  position: absolute;
-  bottom: 0.3em;
-  width: 1.7em;
-  height: 0.2em;
-  background: #1da81d;
-}
-
-.toggle {
+.toggle-2 {
   position: absolute;
   right: 85%;
   top: 2.5em;
@@ -55,12 +46,21 @@ nav {
   background: #1da81d;
 }
 
-.search {
-  position: relative;
-  background: url('./images/search.svg');
-  height: 1em;
-  width: 1em;
-  z-index: 10;
+.toggle-3 {
+  position: absolute;
+  right: 85%;
+  bottom: 1.95em;
+  width: 1.7em;
+  height: 0.2em;
+  background: #1da81d;
+}
+
+.search-icon {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 1.5em;
+  margin-left: 82%;
 }
 
 .hero {
