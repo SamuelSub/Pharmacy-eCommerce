@@ -80,3 +80,31 @@ nav {
   color: #1da81d;
   font-size: 2.2em;
 }
+
+.side-menu {
+  background: white;
+  width: 100%;
+  height: 100%;
+  margin-top: 5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.side-ul {
+  display: grid;
+  width: 100%;
+  height: 88vh;
+  color: #1da81d;
+}
+
+.side-ul li {
+  display: grid;
+}
+
+.side-ul li h2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
