@@ -30,6 +30,7 @@ nav {
 
 .toggle-1 {
   position: absolute;
+  z-index: 10;
   right: 85%;
   top: 2.2em;
   width: 1.7em;
@@ -39,6 +40,7 @@ nav {
 
 .toggle-2 {
   position: absolute;
+  z-index: 10;
   right: 85%;
   top: 2.5em;
   width: 1.7em;
@@ -48,6 +50,7 @@ nav {
 
 .toggle-3 {
   position: absolute;
+  z-index: 10;
   right: 85%;
   bottom: 1.95em;
   width: 1.7em;
@@ -83,12 +86,11 @@ nav {
 
 .side-menu {
   background: white;
-  width: 100%;
-  height: 100%;
-  margin-top: 5em;
   position: absolute;
+  width: 100%;
+  height: 100vh;
   top: 0;
-  left: 0;
+  bottom: 0;
 }
 
 .side-ul {

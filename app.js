@@ -1,10 +1,11 @@
-const toggle = document.querySelector('.toggle');
+const toggle = document.querySelector('.menu-icon');
+const hero = document.querySelector('.hero');
+let firstToggle = false;
 let tl = gsap.timeline(); 
 
-document.addEventListener('click', (e) => {
-  if((e.target.className === 'toggle-1') || (e.target.className === 'toggle-2') || (e.target.className === 'toggle-3') && tl.reversed()) {
-    tl.play();
-    const hero = document.querySelector('.hero');
+toggle.addEventListener('click', (e) => {
+
+  if(firstToggle === false) {
     const sideMenu = document.createElement('div');
     sideMenu.className = 'side-menu';
     hero.appendChild(sideMenu);
@@ -20,9 +21,14 @@ document.addEventListener('click', (e) => {
     tl.to('.toggle-1' , {rotate: '40', transformOrigin: '20% 40%', duration: 0.5}, 'dissapear')
       .to('.toggle-2', {opacity: 0 , duration: 0.3}, 'dissapear')
       .to('.toggle-3', {rotate: '-40', transformOrigin: '20% 40%', duration: 0.5}, 'dissapear')
-      .from('.side-menu', {x: '-100%', opacity: 1, duration: 0.5}, 'dissapear')
-      .fromTo('h2', {x: '-100%'}, {x: 0, duration: 0.3, stagger: 0.1}, 'dissapear');
+      .from('.side-menu', {x: '-100%', duration: 0.4}, 'dissapear')
+      .from('h2', {ease: "back.out(2)", x: '-100%'}, 'dissapear');
+    firstToggle = true;
   } else {
-    tl.reverse();
+    if(!tl.reversed()) {
+      tl.reverse();
+    } else {
+      tl.play();
+    }
   }
 });
