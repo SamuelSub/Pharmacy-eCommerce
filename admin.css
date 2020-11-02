@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  color: rgb(2, 99, 28);
+}
+
+.products h2 {
+  width: 100%;
+  margin-left: 3em;
+}
+
+.products h3 {
+  width: 100%;
+  margin-left: 3.8em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.products-table {
+  width: 90%;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.products-table td {
+  border: 1px solid black;
+}
+
+.orders h2 {
+  margin-left: 3em;
+  margin-top: 2em;
+}
